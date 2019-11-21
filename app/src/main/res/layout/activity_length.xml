@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    tools:context=".LengthActivity">
+
+    <CheckBox
+        android:id="@+id/snowboardCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:checked="true"
+        android:textSize="24sp"
+        android:onClick="onClick"
+        android:text="Snowboard (checked) or Skis (unchecked)"/>
+
+<!--    <RadioGroup-->
+<!--            android:id="@+id/radioGroup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/snowboardRadioButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:checked="true"-->
+<!--            android:text="Snowboarder"-->
+<!--            android:textSize="24sp"-->
+<!--            android:onClick="onClick"/>-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/skiRadioButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Skier"-->
+<!--            android:textSize="24sp"-->
+<!--            android:onClick="onClick"/>-->
+<!--    </RadioGroup>-->
+
+
+    <TextView
+        android:id="@+id/snowboardLengthTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/snowboardImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="4"
+        android:src="@drawable/snowboard"
+        android:scaleType="fitCenter"
+        android:contentDescription="A person riding a snowboard"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:text="Back"
+        android:textSize="24sp" />
+
+</GridLayout>
